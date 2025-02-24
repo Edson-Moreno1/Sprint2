@@ -1,11 +1,24 @@
-aside{
+.aside{
     box-sizing: border-box;
     width: 100%;
     background-color: #fffaf8;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    height: 50vh;
+    font-weight: bold;
+    color: #666;
 }
 
 .aside-menu ul li img {
     width: 20px;
     height: auto;
 }
+
+.aside-menu ul {
+    list-style: none;
+    color: #666;
+}
+
+

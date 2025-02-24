@@ -11,3 +11,9 @@ footer{
     width: 30px;
     height: 30px;
 }
+
+.redes-sociales img{
+    width: 10px;
+    height: 15px;
+    gap: 15px;
+}
