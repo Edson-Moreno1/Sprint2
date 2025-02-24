@@ -46,38 +46,45 @@ class="Comidas">
 
     
     <!--Desayuno-->
-    <div class="platillo-conteiner">
+
     @if(selectedCategory === 'Desayuno' && Desayuno.length){
         @for(platillo of Desayuno;track platillo) {
             <div class="platillo" 
             [ngClass]="{'selected': platillo === selectedPlatillo}" 
             (click)="seleccionarPlatillo(platillo)">
-
+<!--Contenedor izquierdo-->
+<div class="platillo-left">
            @if (platillo.imageUrl) {
                <img [ngClass]="'fixed-img'"
                     src="{{platillo.imageUrl}}" 
                     alt="Imagen del platillo">
            }
-
-           <div class="platillo-info">
+<!--información de nombre y comentario-->
+           <div class="platillo-text">
            <p class="platillo-nombre">{{ platillo.nombre }}</p>
            <p class="platillo-coment">Elegir Cantidad</p>
+           </div>
+</div>
+<!--Contenedor derecho-->
+           <div class="platillo-right">
 
-           <div class="platillo-container-cantidad">
+            <div class="platillo-container-cantidad">
+
            <label for="cantidad">Cantidad:</label>
+
+           <div class="platillo-container-cantidad-input">
            <input type="number" id="cantidad" min="0" [(ngModel)]="platillo.cantidad" (input)="calcularPrecio(platillo)">
             <input type="text" id="precio" [value]="platillo.precioTotal | currency" readonly>
-
-            <p [ngStyle]="{'color': platillo.cantidad> 0 ? 'green' : 'red'}">
+           </div>
+            <p [ngStyle]="{'color': platillo.cantidad> 0 ? 'gray' : 'red'}">
                 {{ platillo.cantidad > 0 ? 'Disponible' : 'No disponible' }}
             </p>
             </div>
            </div>
-       </div>
+       </div><!--Fin de la clase platillo-->
        <hr class="separator"> 
                 }
             }
-    </div>
 <!--Comida-->
 <div class="platillo-conteiner">
     @if(selectedCategory === 'Comida' && Comida.length){

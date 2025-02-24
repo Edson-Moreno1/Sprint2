@@ -33,7 +33,7 @@ nuevoPlatillo: Platillo = {
   precio: 0,
   descripcion: '',
   imageUrl: '',
-  cantidad: 0,
+  cantidad: 1,
   precioTotal: 0
 };
 
@@ -58,7 +58,7 @@ if (this.selectedCategory === 'Desayuno'){
 
 // Limpiar el formulario
 this.tituloPlatillo = '';
-this.nuevoPlatillo ={ nombre:'',precio:0, descripcion:'', imageUrl: '', cantidad: 0, precioTotal: 0};
+this.nuevoPlatillo ={ nombre:'',precio:0, descripcion:'', imageUrl: '', cantidad: 1, precioTotal: 0};
 }
     //Metodo para cancelar
 

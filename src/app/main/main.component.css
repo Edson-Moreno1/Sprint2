@@ -62,8 +62,11 @@
     width: 40px;
     height: 40px;
 }
+
+
 .platillo {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
@@ -73,6 +76,18 @@
 .platillo:hover {
     background-color: #f0f0f0;
 }
+.platillo-left {
+    display: flex;
+    align-items: center;
+}
+.platillo-container-cantidad{
+    display: flex;
+}
+.platillo-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
 .separator {
     border: none;
     height: 1px;
@@ -81,7 +96,7 @@
 }
 .selected {
     background-color: #f0f0f0;
-    border: 2px solid #198754
+    border: 2px solid #666
 }   
 
 .platillo-coment  {
@@ -105,4 +120,18 @@
     border-radius: 8px;
     object-fit: cover;
     border: 1px solid #ccc;
+}
+
+.platillo-container-cantidad-input{
+    display: flex;
+    gap: 25px;
+}
+.platillo-container-cantidad input{
+    background-color: #e0e0e0;
+    border: none;
+    width: 45px;
+
+}
+.platillo-container-cantidad {
+    gap: 15px;
 }
