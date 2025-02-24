@@ -1,0 +1,108 @@
+.Comidas{
+    font-weight: bold;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+.imagen-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.subir-imagen{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 12px 24px;
+    margin-bottom: 15px;
+}
+.titulo-precio{
+    display: flex;
+    gap: 10px;
+    color: #666;
+    border: none;
+}
+.titulo-precio input{
+    border: none;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+
+}
+.titulo-precio label{
+    color: #666;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    width: 150px;
+    
+}
+
+.textarea{
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    width: 100%;
+}
+
+.agregar-cancelar{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+
+}
+.agregar-cancelar button{
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    color: #666;
+    background-color: #e0e0e0;
+    border: none;
+}
+
+.fixed-img{
+    width: 40px;
+    height: 40px;
+}
+.platillo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.platillo:hover {
+    background-color: #f0f0f0;
+}
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+.selected {
+    background-color: #f0f0f0;
+    border: 2px solid #198754
+}   
+
+.platillo-coment  {
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+
+.platillo-nombre{
+    font-weight: bold;
+    font-size: 16px;
+}
+.platillo-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image-preview {
+    width: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}

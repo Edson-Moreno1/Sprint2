@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupar toda la pantalla */
+}
+.layout {
+    display: flex;
+    flex: 1;
+}
+
+.aside {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid gray;
+}
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: white;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+.content{
+    display: flex;
+    flex: 1;
+}
+
+.main {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    border-right: 1px solid gray;
+}
+.footer {
+    background-color: white;
+    padding: 15px;
+    border-top: 1px solid gray;
+}
